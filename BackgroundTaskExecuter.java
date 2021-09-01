@@ -11,10 +11,10 @@ import java.util.concurrent.Executors;
 import android.os.Handler;
 import android.util.Log;
 
-public abstract class BackgroundExecuter{
+public abstract class BackgroundExecutor{
     ExecutorService executorService = null;
 
-    public BackgroundExecuter() {
+    public BackgroundExecutor() {
         this.executorService = Executors.newSingleThreadExecutor();
     }
 
