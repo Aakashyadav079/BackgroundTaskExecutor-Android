@@ -19,7 +19,7 @@ public abstract class BackgroundExecuter{
     private static final String TAG="BackgroundExecuter";
     StringBuffer sb = new StringBuffer();
     ExecutorService executorService=null;
-    Handler mainHandler = null;
+    
     public BackgroundExecuter(){
         this.executorService = Executors.newSingleThreadExecutor();
     }
