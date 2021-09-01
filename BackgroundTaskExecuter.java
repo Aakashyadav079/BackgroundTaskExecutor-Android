@@ -43,13 +43,15 @@ public abstract class BackgroundExecuter{
 
     private  String doInBackground(String ... params){
 
+         //Update progress 
+//         onUpdateProgress(progress);
         return "Result from Background";
         
-        //Update progress
+       
     }
     public abstract void postExecute(String result);
     public void onPreExecute(String message){};
-
+    public void onUpdateProgress(long progress){};
      
 
 }
